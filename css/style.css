@@ -12,18 +12,19 @@ body {
     font-size:1.3em;
     line-height: 1.1;
 }
+
 h1 {
     font-family: 'Righteous', cursive;
     text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
     font-size:4.8em;
     text-align:center;
-
 }
 
 #reset {
     float: right;
     color: crimson;
 }
+
 .ttt {
     color:white;
     font-family: 'EB Garamond', serif;
@@ -50,6 +51,7 @@ label {
     font-size:1.5em;
     color:rgb(133, 145, 145);
 }
+
 footer {
     color:white;
     font-size:1em;
@@ -57,19 +59,23 @@ footer {
     padding-top: 15px;
     background-color: black;
 }
+
 form {
     width:60%;
-    border:2px solid white
-    text-align: center;
+    
 }
+
 a {
     color:white;
 }
-.btn btn-outline-info btn-lg {
-    color:white;
+
+.btn btn-outline-info btn-sm {
+    color: white;
 }
+
 #output {
-    font-size:1.8em;
-    border:2px solid white;
-    text-shadow: 2px 2px 4px #000000;
+    font-size:1.2em;
+    border:2px solid rgb(35, 153, 137);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }

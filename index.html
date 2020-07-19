@@ -22,18 +22,18 @@
        <div class="akan">
           <form>
             <div>
-                <p id="output"></p>
                 <label><i class="far fa-smile"></i>&nbsp; First Name.</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter" required>
                 <br>
-                <label>Year</label>
+                <label><i class="far fa-calendar-plus"></i>&nbsp; Year</label>
                 <input type="number" class="form-control" id="year" placeholder="Enter the year." required
-                    min="1980" max="2019" >
-                <label>Month</label>
+                    min="1930" max="2020" >
+                    <br>
+                <label><i class="far fa-calendar-plus"></i>&nbsp; Month</label>
                 <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
                     max="12">
-
-                <label>Day</label>
+                    <br>
+                <label><i class="far fa-calendar-plus"></i>&nbsp; Day</label>
                 <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
                     max="31">
             </div>
@@ -42,13 +42,13 @@
                 <label>Gender</label><br>
                 <input type="radio" name="gender" id="male" value="male" checked>&nbsp; Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="radio" name="gender" id="female" value="female"> &nbsp;Female
+                <a onclick="submission()" id="submit" class="btn btn-outline-success btn-sm font-weight-bolder">Submit</a>
+                <button type="reset" id="reset" class="btn btn-outline-danger btn-sm font-weight-bolder">Reset</button>
             </div>
         </div>
         <br>
-        <a onclick="submission()" id="submit" class="btn btn-outline-success btn-sm">Submit</a>
         
-        <button type="reset" id="reset" class="btn btn-outline-danger btn-sm">Reset</button>
-        
+        <p id="output"></p>
     </form>
   </div>
   <div>
