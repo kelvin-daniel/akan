@@ -11,7 +11,7 @@ akan name generator
 
 ## Link to the published site
 Checkout the live site here.
-[Akan Name Generator] (https://kelvin-daniel.github.io/landing-page/)??????????
+[Akan Name Generator] (https://kelvin-daniel.github.io/akan/)
 
 ## License: [MIT]
 
