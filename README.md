@@ -1,7 +1,6 @@
-# My Portfolio
+# Akan Name Generator
 ----------------
-### author: [Kelvin Kiplagat] https://github.com/kelvin-daniel/landing-page
-????????????????????????
+### author: [Kelvin Kiplagat] https://github.com/kelvin-daniel/akan
 
 ## Description
 
