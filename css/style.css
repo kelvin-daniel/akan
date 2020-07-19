@@ -1,12 +1,13 @@
 body {
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg.jpeg) no-repeat center center/cover;
+    padding-left: 10px;
 }
 
 .logo {
-    align-items: center;
+    float: right;
 }
 
-.ppp {
+.descr {
     color:white;
     font-family: 'EB Garamond', serif;
     font-size:1.3em;
