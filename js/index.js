@@ -10,8 +10,8 @@ function animatedForm(){
           //validation check
           if(input.type === "text" && validateUser(input)) {
             nextSlide(parent,nextForm)
-          }else if(input.type === "date" && validateUser(input)) {
-            nextSlide(parent,nextForm);
+          }else if(input.type === "date" && validateDate(input)) {
+            nextSlide(parent,nextForm)
           }else{
                parent.style.animation = "shake 0.5s ease";
           }
@@ -32,6 +32,16 @@ function validateUser(user){
     }
 }
 
+function validateDate(date){
+    if(date.value.length < 8){
+        console.log('not enough characters'); 
+        error('rgb(189,87,87)')
+    }else{
+        error('rgb(87, 189, 130)')
+        return true;
+    }
+}
+
 function nextSlide(parent, nextForm){
     parent.classList.add('innactive');
     parent.classList.remove('active');
@@ -43,21 +53,20 @@ function error(color){
 }
 
 function getAkanName(){
-    var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    var maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
-    var femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-    var myBirthday = document.getElementById("myBirthDate").value;
-    var myGender = document.getElementsByName("gender");
-    var dateOfBirth = new Date(myBirthday);
-    var dayOfTheWeek = dateOfBirth.getDay();
+    let maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
+    let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
+    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let myBirthday = document.getElementById("birth").value;
+    let Gender = document.getElementsByName("gender");
+    let dateOfBirth = new Date(myBirthday);
+    let dayOfTheWeek = dateOfBirth.getDay();
     if(myBirthday === ""){
-        document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Didn't Submit a Valid Date!</div>";
-        $('#message').addClass("animated shake");
-    }
-    else {
-        for(var i=0;i<myGender.length;i++){
-            if(myGender[i].checked){
-                if(myGender[i].value === "Male"){
+        console.log('inalid date'); 
+        error('rgb(189,87,87)')
+    }else {
+        for(let i=0;i<Gender.length;i++){
+            if(Gender[i].checked){
+                if(Gender[i].value === "Male"){
                     document.getElementById('message').innerHTML = "<span><i class=\"fa fa-male\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
                     $('#message span:first-child').addClass("animated fadeInDown");
                     $('#message span:last-child').addClass("animated fadeInUp");

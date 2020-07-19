@@ -14,7 +14,7 @@ body {
 
 .field-name,
 .field-last,
-.field-email,
+.field-gender,
 .field-date,
 .field-finish {
     position: absolute;
@@ -33,7 +33,7 @@ body {
 
 .field-name i,
 .field-last i,
-.field-email i,
+.field-gender i,
 .field-date i,
 .field-finish i {
     padding: 10px;
