@@ -1,96 +1,85 @@
-function animatedForm(){
-    const arrows = document.querySelectorAll(".fa-arrow-right");
 
-    arrows.forEach(arrow => {
-      arrow.addEventListener('click', () => {
-          const input= arrow.previousElementSibling;
-          const parent = arrow.parentElement;
-          const nextForm= parent.nextElementSibling;
-
-          //validation check
-          if(input.type === "text" && validateUser(input)) {
-            nextSlide(parent,nextForm)
-          }else if(input.type === "date" && validateDate(input)) {
-            nextSlide(parent,nextForm)
-          }else{
-               parent.style.animation = "shake 0.5s ease";
-          }
-          parent.addEventListener("animationend", () => {
-              parent.style.animation = "";
-          });
-      });
-    });
-}
-
-function validateUser(user){
-    if(user.value.length < 1){
-        console.log('not enough characters'); 
-        error('rgb(189,87,87)')
-    }else{
-        error('rgb(87, 189, 130)')
-        return true;
+var submission = function() {
+    var daysOfTheWeek = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ];
+    var maleNames = [
+      "Kwasi",
+      "Kwadwo",
+      "Kwabena",
+      "Kwaku",
+      "Yaw",
+      "Kofi",
+      "Kwame"
+    ];
+    var femaleNames = [
+      "Akosua",
+       " Adwoa",
+      "Abenaa",
+      "Akua",
+      "Yaa",
+      "Afua",
+      "Ama"
+    ];
+    var month = parseInt(document.getElementById("month").value);
+    var year = parseInt(document.getElementById("year").value);
+    var day = parseInt(document.getElementById("day").value);
+    var name =(document.getElementById("name").value);
+    var date0fbirth = new Date(year + "/" + month + "/" + day);
+    var results = date0fbirth.getDay();
+    var output = document.getElementById("output");
+    var male = document.getElementById("male")
+    var female = document.getElementById("female")
+    
+    if (month =="" && year =="" && day =="" && name=="") {
+      alert("Please Enter you credentials");
+      return false;
     }
-}
-
-function validateDate(date){
-    if(date.value.length < 8){
-        console.log('not enough characters'); 
-        error('rgb(189,87,87)')
-    }else{
-        error('rgb(87, 189, 130)')
-        return true;
+  
+  //   if (month == null || month== "", day == null || day == "", year== null || year == "", name == null || name == "") {
+  //     alert("Please Fill All Required Field");
+  //     return false;
+  //   }
+  // }
+    
+    
+   if (year < 0) {
+      output.style.background ="red"
+      output.style.color= "white"
+      output.innerHTML = "Hey! " + name + " please enter a valid year! "
+  }
+    
+  else if ((month < 1) || (month > 31)) {
+      output.style.background ="red"
+      output.style.color= "white"
+      output.innerHTML = "Hey! " + name + " please enter a valid month! "
+  }
+    
+   else if (day < 0 || day > 31) {
+      output.style.background ="red"
+      output.style.color= "white"
+      output.innerHTML = "Hey! " + name + " please enter a valid day! "
+  }
+  //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
+   
+  //  if(valid == false){
+  //    alert("No Input received!!");
+  //  }
+  
+    if(male.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
+      output.style.background ="lime"
+        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
     }
-}
-
-function nextSlide(parent, nextForm){
-    parent.classList.add('innactive');
-    parent.classList.remove('active');
-    nextForm.classList.add('active');
-}
-
-function error(color){
-    document.body.style.backgroundColor = color
-}
-
-function getAkanName(){
-    let maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
-    let femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    let myBirthday = document.getElementById("birth").value;
-    let Gender = document.getElementsByName("gender");
-    let dateOfBirth = new Date(myBirthday);
-    let dayOfTheWeek = dateOfBirth.getDay();
-    if(myBirthday === ""){
-        console.log('inalid date'); 
-        error('rgb(189,87,87)')
-    }else {
-        for(let i=0;i<Gender.length;i++){
-            if(Gender[i].checked){
-                if(Gender[i].value === "Male"){
-                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-male\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + maleAkanNames[dayOfTheWeek] + "</span>";
-                    $('#message span:first-child').addClass("animated fadeInDown");
-                    $('#message span:last-child').addClass("animated fadeInUp");
-                }
-                else {
-                    document.getElementById('message').innerHTML = "<span><i class=\"fa fa-female\"></i></span>&nbsp;&nbsp; Born on a <span>" + days[dayOfTheWeek] + "</span>, Your Akan Name's <span>" + femaleAkanNames[dayOfTheWeek] + "</span>";
-                    $('#message span:first-child').addClass("animated fadeInDown");
-                    $('#message span:last-child').addClass("animated fadeInUp");
-                }
-                break;
-            }    
-            else {
-                document.getElementById('message').innerHTML = "<div class=\"alert alert-danger\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">x</button><strong>Oh snap!</strong> You Should Select a Gender Too Determine Your Akan Name!</div>";
-                $('#message').addClass("animated shake");
-            }
-        }
-    }
-}
-
-function clearAkanMessage(){
-    document.getElementById('message').innerHTML = "";
-}
-
-
-
-
-animatedForm();
+     else if(female.checked && year > 0 && month > 0 && month < 12 && day > 0 && day < 32) {
+      output.style.background ="lime"
+      output.style.background ="red"
+      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+  }
+  
+  };

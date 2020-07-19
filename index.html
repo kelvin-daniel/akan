@@ -9,53 +9,52 @@
     <title>Akan</title>
 </head>
 <body> 
-  <div class="container text-center">
-    <img src="./img/logo.png" alt="">
+  <div class="container">
+    <div class="logo"><img src="../img/logo.png" alt="" class=""></div>
+    <p class="ppp">The Akan naming system is a culture that was developed by the Ghananians. Children were given a
+        "day name"
+        which corresponds to the day in the week they were born. The tradition was shared out through-out west
+        Africa and the African Diaspora. Notable figures with Akan names include Ghana's first president Kwame
+        Nkrumah
+        and former United Nations Secretary-General Kofi Annan. </p>
+    <p class="ttt"></p>
+    <hr>
+       <div class="akan">
+          <form>
+            <div>
+                <p id="output"></p>
+                <label><i class="far fa-smile"></i>&nbsp; First Name.</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter" required>
+                <br>
+                <label>Year</label>
+                <input type="number" class="form-control" id="year" placeholder="Enter the year." required
+                    min="1980" max="2019" >
+                <label>Month</label>
+                <input type="number" class="form-control" id="month" placeholder="Enter the month" required min="1"
+                    max="12">
+
+                <label>Day</label>
+                <input type="number" class="form-control" id="day" placeholder="Enter the day" required min="1"
+                    max="31">
+            </div>
+            <br>
+            <div class="ggg">
+                <label>Gender</label><br>
+                <input type="radio" name="gender" id="male" value="male" checked>&nbsp; Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female" value="female"> &nbsp;Female
+            </div>
+        </div>
+        <br>
+        <a onclick="submission()" id="submit" class="btn btn-outline-success btn-sm">Submit</a>
+        
+        <button type="reset" id="reset" class="btn btn-outline-danger btn-sm">Reset</button>
+        
+    </form>
   </div>
-  
-  <form action="">
-    <div class="field-name">
-      <i class="fas fa-smile"></i>
-      <input type="text" placeholder="First Name" required>
-      <i class="fas fa-arrow-right"></i>
-    </div>
+  <div>
+  <footer class="footer"><p>copyright  &copy; 2020 kelvin kiplagat</p></footer>
+  </div>
 
-    <div class="field-last innactive">
-      <i class="fas fa-smile"></i>
-      <input type="text" placeholder="Last Name" required>
-      <i class="fas fa-arrow-right"></i>
-    </div>
-
-    <div class="field-date innactive">
-      <i class="far fa-calendar-alt"></i>
-      <input type="date" id="birth" placeholder='Date of Birth' required> 
-      <i class="fas fa-arrow-right"></i>
-    </div>
-
-    <div class="field-gender innactive">
-      <i class="fas fa-venus-mars"></i>
-      <div class="form-group mb15">
-        <label class="label font-weight-bolder h3">Gender</label>
-         <div class="rdio rdio-default fs11">
-              <input type="radio" name="gender" id="male" value="Male">
-              <label for="male" class="font-weight-bolder">&nbsp;&nbsp;Male</label>
-          </div>
-          <div class="rdio rdio-default fs11">
-              <input type="radio" name="gender" value="Female" id="female">
-              <label for="female" class="font-weight-bolder">&nbsp;&nbsp;Female</label>
-           </div>
-      </div>
-      <i class="fas fa-arrow-right" onclick="nextSlide"></i>
-    </div>
-
-    <div class="field-finish innactive">
-      <i class="fas fa-heart"></i>
-      <p id="message" class="output"></p>
-      <i class="fas fa-heart"></i>
-    </div>
-  </form>
-
-
-    <script src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
