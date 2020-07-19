@@ -5,14 +5,14 @@
 
 ## Description
 
-This is an application used to generate akan names which originated in Ghana and was used to name children according to the day of the week they were born.
+This is an application built to generate akan names which originated in Ghana and was used to name children according to the day of the week they were born. Find out what your name would have been!
 
 ## Features
-Blur Effect
+akan name generator
 
 ## Link to the published site
-
-[my portfolio] (https://kelvin-daniel.github.io/landing-page/)??????????
+Checkout the live site here.
+[Akan Name Generator] (https://kelvin-daniel.github.io/landing-page/)??????????
 
 ## License: [MIT]
 
