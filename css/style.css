@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     display: flex;
-    background-color: rgb(87, 189, 130);
+    background-color: rgb(15, 15, 15);
     transition: background 0.5s ease;
     position: relative;
 }
@@ -15,7 +15,7 @@ body {
 .field-name,
 .field-last,
 .field-email,
-.field-password,
+.field-date,
 .field-finish {
     position: absolute;
     top: 50%;
@@ -34,7 +34,7 @@ body {
 .field-name i,
 .field-last i,
 .field-email i,
-.field-password i,
+.field-date i,
 .field-finish i {
     padding: 10px;
     cursor: pointer;
@@ -43,7 +43,7 @@ body {
 .field-name input,
 .field-last input,
 .field-email input,
-.field-password input {
+.field-date input {
     background: none;
     border: none;
     flex: 1;
