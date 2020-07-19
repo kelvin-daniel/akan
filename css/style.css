@@ -3,7 +3,12 @@ body {
     padding-left: 10px;
 }
 
-.logo {
+.rounded{
+    width: 90px;
+}
+
+.rc{
+    width: 80px;
 }
 
 .descr {

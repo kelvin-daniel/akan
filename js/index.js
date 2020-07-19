@@ -16,14 +16,7 @@ var submission = function() {
     if (month =="" && year =="" && day =="" && name=="") {
       alert("Please Enter you credentials");
       return false;
-    }
-  
-  //   if (month == null || month== "", day == null || day == "", year== null || year == "", name == null || name == "") {
-  //     alert("Please Fill All Required Field");
-  //     return false;
-  //   }
-  // }
-    
+    } 
     
    if (year < 0) {
       output.style.background ="red"
@@ -42,20 +35,15 @@ var submission = function() {
       output.style.color= "white"
       output.innerHTML = "Hey! " + name + " please enter a valid day! "
   }
-  //  var valid = (year>0 && (month > 0 && month <= 12) (day > 0 && day <32))
-   
-  //  if(valid == false){
-  //    alert("No Input received!!");
-  //  }
   
     if(male.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
       output.style.background ="aqua"
-        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + maleNames[results];
+        output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + "<br> and your Akan name is " + maleNames[results];
     }
      else if(female.checked && year > 0 && month > 0 && month < 13 && day > 0 && day < 32) {
       output.style.background ="aqua"
       output.style.background ="pink"
-      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " and your Akan name is " + femaleNames[results];
+      output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " <br> and your Akan name is " + femaleNames[results];
   }
   
   };
