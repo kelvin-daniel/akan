@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html style="--font-family-text:OpenSans, Arial, Helvetica, sans-serif; --font-family-input:SourceCodePro, monaco, Courier, monospace;" class="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" async="" src="HackerRank_files/analytics.js"></script><script type="text/javascript" async="" src="HackerRank_files/gtm.js"></script><script async="" src="HackerRank_files/gtm_002.js"></script><script async="" crossorigin="anonymous" src="HackerRank_files/fs.js"></script><script>
+      (function headInitializer() {
+        var dataLayerObject = {
+          company_unique_id: 'bbtts3i28sr',
+          test_unique_id: '2sedsp4no1t'
+        };
+                window.dataLayer = [dataLayerObject];
+        window.userAgent = {"family":"Firefox","major":"78","minor":"0","patch":"0","device":{"family":"Other","major":"0","minor":"0","patch":"0"},"os":{"family":"Ubuntu","major":"0","minor":"0","patch":"0"}};
+      })();
+    </script>
+
+    
+    <script>
+      (function loadFullStory() {
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
+        window['_fs_org'] = 'Q02VK';
+        window['_fs_namespace'] = 'CANDIDATE_FS';
+        (function(m,n,e,t,l,o,g,y){
+            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+            g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+            o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+            g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+            g.log = function(a,b){g("log",[a,b])};
+            g.consent=function(a){g("consent",!arguments.length||a)};
+            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+            g.clearUserCookie=function(){};
+            g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+            if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+        })(window,document,window['_fs_namespace'],'script','user');
+      })()
+    </script>
+    <script>
+      //HR namespace
+      HR = window.HR || {};
+      HR.enableFullstory = true;
+      
+    </script>
+    
+
+      <meta charset="utf-8">
+  
+  <title> HackerRank </title><meta name="description" id="meta-description" content="Join over 7 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews."><meta property="og:title" id="meta-og-title" content="HackerRank"><meta property="og:image" id="meta-og-image" content="https://hrcdn.net/og/default.jpg"><meta property="og:description" id="meta-og-description" content="Join over 7 million developers in solving code challenges on HackerRank, one of the best ways to prepare for programming interviews."><meta property="og:site_name" id="meta-og-site" content="HackerRank"><meta property="og:type" id="meta-og-type" content="website"><meta property="article:author" content="https://www.facebook.com/hackerrank"><meta name="twitter:card" id="meta-twitter-card" content="summary"><meta name="twitter:site" id="meta-twitter-site" content="@hackerrank"><meta name="twitter:title" id="meta-twitter-title" content="HackerRank"><meta property="fb:app_id" id="meta-fb-id" content="347499128655783"><meta content="authenticity_token" name="csrf-param" id="csrf-param"><meta content="z7iymehwQ6n9861besznK+ptiVlJMAYJ3aT0gfZ7m1uFcpNB/adblpfsSIBSnK5KvKm84atsjD+oMv1YOqzwfg==" name="csrf-token" id="csrf-token">
+  <script>
+    window.BACKEND_ENDPOINT = 'https://www.hackerrank.com/';
+    window.MANIFEST_VERSION = '72d2c0a914';
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="https://hrcdn.net/candidate-site/assets/favicon-62bdd46faf.png">
+
+  <!-- Prefetch dns on production -->
+  
+    <link rel="dns-prefetch" href="https://hrcdn.net/">
+    <link rel="dns-prefetch" href="https://d3keuzeb2crhkn.cloudfront.net/">
+    <link rel="dns-prefetch" href="https://notifications.hackerrank.com/">
+    <link rel="dns-prefetch" href="https://api.mixpanel.com/">
+    <link rel="dns-prefetch" href="https://metrics.hackerrank.com/">
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/hackerrank_r_app-211a51d4.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorshackerrank_r_app-34cfcce3.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscoding_question_viewcustom_inputfrontend_question_vie.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition_002.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition_lan.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/commonsdiagram_question_viewhackerrank_r_login_viewsubjectiv.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscoding_question_viewhackerrank_r_competition_landingh.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_login_vi.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/commonshackerrank_r_competition_landinghackerrank_r_login_vi.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/commonshackerrank_r_login_viewtestbase-52881371.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_logi_002.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/hackerrank_r_login_view-ece3545e.css">
+  
+    <link rel="stylesheet" type="text/css" href="HackerRank_files/vendorshackerrank_r_login_view-fd54d020.css">
+  
+
+  <!-- Prefetch / preload assets on production -->
+  
+
+    <!-- preload scripts required on the same page -->
+    <link rel="preload" as="script" href="HackerRank_files/hackerrank_r_vendor-73c2c7725e.js">
+    <link rel="preload" as="script" href="HackerRank_files/hackerrank_r_client-93efbf52.js">
+    <link rel="preload" as="script" href="HackerRank_files/runtime-c52b4f85.js">
+
+    
+      <link rel="preload" as="script" href="HackerRank_files/hackerrank_r_app-69a08327.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_app-90f86a09.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorscoding_question_viewcustom_inputfrontend_question_view.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition__002.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition_land.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/commonsdiagram_question_viewhackerrank_r_login_viewsubjective.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorscoding_question_viewhackerrank_r_competition_landingha.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_krackjack.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_login_vie.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/commonshackerrank_r_competition_landinghackerrank_r_login_vie.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/commonshackerrank_r_login_viewrba_question_view-26f68bc0.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/commonshackerrank_r_login_viewtestbase-ab64e6c7.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_login_002.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_login_viewrba_question_view-f52375af.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/hackerrank_r_login_view-0fad5b33.js">
+    
+      <link rel="preload" as="script" href="HackerRank_files/vendorshackerrank_r_login_view-cd93b9f9.js">
+    
+    <!-- preload scripts end -->
+
+  
+
+  <!-- Load promise polyfill for the non-believers -->
+  <script>
+    (window.Promise && window.Promise.prototype.finally) || document.write('<script src="https://hrcdn.net/candidate-site/assets/polyfill-d05a380d50.min.js" type="text\/javascript"><\/script>');
+  </script>
+  <!-- Added for GTM and sentry -->
+  
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+</script>
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBPFQ7N');</script>
+
+
+
+
+
+<script>
+  var errorQueue = [];
+  (function(window) {
+    function errorListener(event) {
+      if (event.type === 'unhandledrejection' && !event.reason) {
+        return;
+      }
+      errorQueue.push(event);
+    }
+    window.addEventListener('error', errorListener);
+    window.addEventListener('unhandledrejection', errorListener);
+    window.removeInitialErrorListeners = function() {
+      window.removeEventListener('error', errorListener);
+      window.removeEventListener('unhandledrejection', errorListener);
+    };
+    window.getSentryConfig = function () {
+      return {
+        token: "76b68c9f9470440faa544a0602206fe9",
+        projectID: "1393856",
+      };
+    };
+  })(window);
+</script>
+
+
+
+  <script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_app-90f86a09.js"></script><script charset="utf-8" src="HackerRank_files/hackerrank_r_app-69a08327.js"></script><style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorsbasequestioncode_review_viewcoding_question_viewcompl.css"><script charset="utf-8" src="HackerRank_files/vendorsbasequestioncode_review_viewcoding_question_viewcomple.js"></script><script charset="utf-8" src="HackerRank_files/vendorscoding_question_viewdiagram_editordiagram_question_vie.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorsbasequestioncode_review_viewcoding_question_viewhacke.css"><script charset="utf-8" src="HackerRank_files/vendorsbasequestioncode_review_viewcoding_question_viewhacker.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscode_review_viewcustom_inputfeedback_formhackerrank_r.css"><script charset="utf-8" src="HackerRank_files/vendorscode_review_viewcustom_inputfeedback_formhackerrank_r_.js"></script><script charset="utf-8" src="HackerRank_files/vendorscoding_question_viewcustom_inputfrontend_question_view.js"></script><script charset="utf-8" src="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition__002.js"></script><script charset="utf-8" src="HackerRank_files/vendorscustom_inputfeedback_formhackerrank_r_competition_land.js"></script><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_login_vie.js"></script><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_krackjack.js"></script><script charset="utf-8" src="HackerRank_files/vendorscoding_question_viewhackerrank_r_competition_landingha.js"></script><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_competition_landinghackerrank_r_login_002.js"></script><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_login_viewrba_question_view-f52375af.js"></script><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_login_view-cd93b9f9.js"></script><script charset="utf-8" src="HackerRank_files/commonsdiagram_question_viewhackerrank_r_login_viewsubjective.js"></script><script charset="utf-8" src="HackerRank_files/commonshackerrank_r_competition_landinghackerrank_r_login_vie.js"></script><script charset="utf-8" src="HackerRank_files/commonshackerrank_r_login_viewtestbase-ab64e6c7.js"></script><script charset="utf-8" src="HackerRank_files/commonshackerrank_r_login_viewrba_question_view-26f68bc0.js"></script><script charset="utf-8" src="HackerRank_files/hackerrank_r_login_view-0fad5b33.js"></script><style>
+html.scroll-hidden,html.scroll-hidden body{
+  overflow: hidden;
+  height:100vh;
+}
+html.scroll-hidden.pad-adjustment body{
+    padding-right : 12px;
+}
+html.scroll-hidden.pad-adjustment .fixed-elm{
+    padding-right : 12px;
+}</style><script charset="utf-8" src="HackerRank_files/lib_offlinejs-dc6b5994.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorshackerrank_r_krackjack-74423d45.css"><script charset="utf-8" src="HackerRank_files/vendorshackerrank_r_krackjack-d2be370e.js"></script><script charset="utf-8" src="HackerRank_files/hackerrank_r_krackjack-b7fa2079.js"></script><script charset="utf-8" src="HackerRank_files/hackerrank_r_intersection_observer-27cdb7e8.js"></script><script src="HackerRank_files/ckeditor.js" async=""></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscoding_question_viewtestbase-44d21597.css"><script charset="utf-8" src="HackerRank_files/vendorscoding_question_viewtestbase-e74681e7.js"></script><script charset="utf-8" src="HackerRank_files/commonscoding_question_viewfrontend_question_viewtest_case_ui.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/testbase-7575b80a.css"><script charset="utf-8" src="HackerRank_files/testbase-13c32f92.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/questionlist-8f11576c.css"><script charset="utf-8" src="HackerRank_files/questionlist-ece49c82.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorsbasequestion-28ea6594.css"><script charset="utf-8" src="HackerRank_files/vendorsbasequestion-869f46ae.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/basequestion-0b459556.css"><script charset="utf-8" src="HackerRank_files/basequestion-bb110fba.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/instructions-523300bb.css"><script charset="utf-8" src="HackerRank_files/instructions-75cd7e6d.js"></script><script charset="utf-8" src="HackerRank_files/vendorsmcq_question_view-25dca415.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/mcq_question_view-49b6019e.css"><script charset="utf-8" src="HackerRank_files/mcq_question_view-8e8bf70a.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/vendorscustom_inputfrontend_question_viewrba_question_viewte.css"><script charset="utf-8" src="HackerRank_files/vendorscustom_inputfrontend_question_viewrba_question_viewtes.js"></script><script charset="utf-8" src="HackerRank_files/vendorsfrontend_question_view-41c31ffc.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/commonscode_review_viewcoding_question_viewfrontend_question.css"><script charset="utf-8" src="HackerRank_files/commonscode_review_viewcoding_question_viewfrontend_question_.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/frontend_question_view-72cfaaae.css"><script charset="utf-8" src="HackerRank_files/frontend_question_view-ae87bf8b.js"></script><style>.cke{visibility:hidden;}</style><script type="text/javascript" src="HackerRank_files/config.js"></script><style type="text/css" media="screen" class="monaco-colors">.monaco-editor .accessibilityHelpWidget { background-color: #f3f3f3; }
+.monaco-editor .accessibilityHelpWidget { color: #616161; }
+.monaco-editor .accessibilityHelpWidget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input { background-color: #fffffe; }
+.monaco-editor, .monaco-editor .inputarea.ime-input { color: #000000; }
+.monaco-editor .margin { background-color: #fffffe; }
+.monaco-editor .rangeHighlight { background-color: rgba(253, 255, 0, 0.2); }
+.vs-whitespace { color: rgba(51, 51, 51, 0.2) !important; }
+.monaco-editor .bracket-match { background-color: rgba(0, 100, 0, 0.1); }
+.monaco-editor .bracket-match { border: 1px solid #b9b9b9; }
+.monaco-editor .monaco-editor-overlaymessage .anchor { border-top-color: #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { border: 1px solid #007acc; }
+.monaco-editor .monaco-editor-overlaymessage .message { background-color: #d6ecf2; }
+.monaco-editor .codelens-decoration { color: #999999; }
+.monaco-editor .codelens-decoration > a:hover { color: #0000ff !important; }
+.monaco-editor .findOptionsWidget { background-color: #f3f3f3; }
+.monaco-editor .findOptionsWidget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #a8ac94; }
+.monaco-editor .findScope { background-color: rgba(180, 180, 180, 0.3); }
+.monaco-editor .find-widget { background-color: #f3f3f3; }
+.monaco-editor .find-widget { box-shadow: 0 2px 8px #a8a8a8; }
+.monaco-editor .find-widget { color: #616161; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #a1260d; }
+.monaco-editor .find-widget .monaco-sash { background-color: #c8c8c8; width: 3px !important; margin-left: -4px;}
+.monaco-editor .find-widget .monaco-checkbox .checkbox:checked + .label { border: 1px solid rgba(0, 122, 204, 0); }
+.monaco-editor .find-widget .monaco-checkbox .checkbox:checked + .label { background-color: rgba(0, 122, 204, 0.12); }
+.monaco-workbench .monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: rgba(0, 122, 204, 0.4); }
+.monaco-editor .line-numbers { color: #237893; }
+.monaco-editor .current-line ~ .line-numbers { color: #0b216f; }
+.monaco-editor .view-overlays .current-line { background-color: #eaf2fe; }
+.monaco-editor .margin-view-overlays .current-line-margin { background-color: #eaf2fe; border: none; }
+.monaco-editor .lines-content .cigr { box-shadow: 1px 0 0 0 #d3d3d3 inset; }
+.monaco-editor .lines-content .cigra { box-shadow: 1px 0 0 0 #939393 inset; }
+.monaco-editor .minimap-slider, .monaco-editor .minimap-slider .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.2); }
+.monaco-editor .minimap-slider:hover, .monaco-editor .minimap-slider:hover .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.35); }
+.monaco-editor .minimap-slider.active, .monaco-editor .minimap-slider.active .minimap-slider-horizontal { background: rgba(0, 0, 0, 0.3); }
+.monaco-editor .minimap-shadow-visible { box-shadow: #dddddd -6px 0 6px -6px inset; }
+.monaco-editor .view-ruler { box-shadow: 1px 0 0 0 #d3d3d3 inset; }
+.monaco-editor .scroll-decoration { box-shadow: #dddddd 0 6px 6px -6px inset; }
+.monaco-editor .focused .selected-text { background-color: #add6ff; }
+.monaco-editor .selected-text { background-color: #e5ebf1; }
+.monaco-editor .cursor { background-color: #000000; border-color: #000000; color: #ffffff; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e51400'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23e9a700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%2375beff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22%236c6c6c%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.showUnused .monaco-editor .squiggly-inline-unnecessary { opacity: 0.467; }
+.monaco-editor .squiggly-inline-deprecated { text-decoration: line-through; text-decoration-color: #000000}
+.monaco-editor .reference-zone-widget .ref-tree .referenceMatch .highlight { background-color: rgba(234, 92, 0, 0.3); }
+.monaco-editor .reference-zone-widget .preview .reference-decoration { background-color: rgba(245, 216, 2, 0.87); }
+.monaco-editor .reference-zone-widget .ref-tree { background-color: #f3f3f3; }
+.monaco-editor .reference-zone-widget .ref-tree { color: #646465; }
+.monaco-editor .reference-zone-widget .ref-tree .reference-file { color: #1e1e1e; }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { background-color: rgba(51, 153, 255, 0.2); }
+.monaco-editor .reference-zone-widget .ref-tree .monaco-list:focus .monaco-list-rows > .monaco-list-row.selected:not(.highlighted) { color: #6c6c6c !important; }
+.monaco-editor .reference-zone-widget .preview .monaco-editor .monaco-editor-background,.monaco-editor .reference-zone-widget .preview .monaco-editor .inputarea.ime-input {	background-color: #f2f8fc;}
+.monaco-editor .reference-zone-widget .preview .monaco-editor .margin {	background-color: #f2f8fc;}
+.monaco-editor .goto-definition-link { color: #0000ff !important; }
+.severity-icon.severity-error { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8.58318%202.02842C9.96435%202.16331%2011.2561%202.77279%2012.2383%203.75307C13.3643%204.87923%2013.9978%206.40584%2014%207.99829C14.0004%209.38617%2013.5196%2010.7313%2012.6396%2011.8045C11.7595%2012.8778%2010.5345%2013.6127%209.17333%2013.8841C7.81215%2014.1556%206.39895%2013.9467%205.1745%2013.2931C3.95005%2012.6394%202.99008%2011.5815%202.45814%2010.2995C1.92619%209.0175%201.85517%207.59072%202.25717%206.26222C2.65917%204.93373%203.50933%203.7857%204.66282%203.0137C5.8163%202.24171%207.20177%201.89351%208.58318%202.02842ZM8.68038%201.03316C10.292%201.19055%2011.7993%201.90184%2012.9453%203.04585C14.2587%204.35938%2014.9976%206.14013%2015%207.99764C15.0005%209.61695%2014.4396%2011.1864%2013.4129%2012.4385C12.3861%2013.6907%2010.9569%2014.5482%209.36889%2014.8648C7.78084%2015.1815%206.13211%2014.9378%204.70359%2014.1752C3.27506%2013.4127%202.1551%2012.1784%201.53449%2010.6828C0.913887%209.18708%200.831027%207.52251%201.30003%205.97259C1.76903%204.42268%202.76089%203.08331%204.10662%202.18265C5.45236%201.28199%207.06873%200.875761%208.68038%201.03316ZM5.52498%205L8.00004%207.47506L10.4751%205L11.1822%205.70711L8.70714%208.18217L11.1818%2010.6569L10.4747%2011.364L8.00004%208.88927L5.52535%2011.364L4.81824%2010.6569L7.29293%208.18217L4.81787%205.70711L5.52498%205Z%22%20fill%3D%22%23a1260d%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-warning { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M14.12%2013.9725L15%2012.5L9.37927%202H7.61924L1.9985%2012.5L2.87852%2013.9725H14.12ZM2.87852%2012.9725L8.49925%202.47249L14.12%2012.9725H2.87852ZM7.98952%206H8.98802V10H7.98952V6ZM7.98952%2011H8.98802V12H7.98952V11Z%22%20fill%3D%22%23ddb100%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-info { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3%207.5C3%204.46243%205.46243%202%208.5%202C11.5376%202%2014%204.46243%2014%207.5C14%2010.5376%2011.5376%2013%208.5%2013C5.46243%2013%203%2010.5376%203%207.5ZM2%207.5C2%203.91015%204.91015%201%208.5%201C12.0899%201%2015%203.91015%2015%207.5C15%2011.0899%2012.0899%2014%208.5%2014C4.91015%2014%202%2011.0899%202%207.5ZM8%204V5H9V4H8ZM8%206L8%2010H9L9%206H8Z%22%20fill%3D%22%23007acc%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.severity-icon.severity-ignore { background: url("data:image/svg+xml,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M3%207.5C3%204.46243%205.46243%202%208.5%202C11.5376%202%2014%204.46243%2014%207.5C14%2010.5376%2011.5376%2013%208.5%2013C5.46243%2013%203%2010.5376%203%207.5ZM2%207.5C2%203.91015%204.91015%201%208.5%201C12.0899%201%2015%203.91015%2015%207.5C15%2011.0899%2012.0899%2014%208.5%2014C4.91015%2014%202%2011.0899%202%207.5ZM8%204V5H9V4H8ZM8%206L8%2010H9L9%206H8Z%22%20fill%3D%22%2375beff%22%2F%3E%3C%2Fsvg%3E") center center no-repeat; height: 16px; width: 16px; }
+.monaco-editor .marker-widget a { color: #006ab1; }
+.monaco-editor .hoverHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .monaco-editor-hover { background-color: #f3f3f3; }
+.monaco-editor .monaco-editor-hover { border: 1px solid #c8c8c8; }
+.monaco-editor .monaco-editor-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-top: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover hr { border-bottom: 0px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .monaco-editor-hover a { color: #006ab1; }
+.monaco-editor .monaco-editor-hover .hover-row .actions { background-color: #e7e7e7; }
+.monaco-editor .monaco-editor-hover code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor.vs .valueSetReplacement { outline: solid 2px #b9b9b9; }
+.monaco-editor .tokens-inspect-widget { border: 1px solid #c8c8c8; }
+.monaco-editor .tokens-inspect-widget .tokens-inspect-separator { background-color: #c8c8c8; }
+.monaco-editor .tokens-inspect-widget { background-color: #f3f3f3; }
+.monaco-editor .detected-link-active { color: #0000ff !important; }
+.monaco-editor .parameter-hints-widget { border: 1px solid #c8c8c8; }
+.monaco-editor .parameter-hints-widget.multiple .body { border-left: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .parameter-hints-widget .signature.has-docs { border-bottom: 1px solid rgba(200, 200, 200, 0.5); }
+.monaco-editor .parameter-hints-widget { background-color: #f3f3f3; }
+.monaco-editor .parameter-hints-widget a { color: #006ab1; }
+.monaco-editor .parameter-hints-widget code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor .snippet-placeholder { background-color: rgba(10, 50, 100, 0.2); outline-color: transparent; }
+.monaco-editor .finish-snippet-placeholder { background-color: transparent; outline-color: rgba(10, 50, 100, 0.5); }
+.monaco-editor .suggest-widget .monaco-list .monaco-list-row .monaco-highlighted-label .highlight { color: #0066bf; }
+.monaco-editor .suggest-widget { color: #000000; }
+.monaco-editor .suggest-widget a { color: #006ab1; }
+.monaco-editor .suggest-widget code { background-color: rgba(220, 220, 220, 0.4); }
+.monaco-editor .focused .selectionHighlight { background-color: rgba(173, 214, 255, 0.3); }
+.monaco-editor .selectionHighlight { background-color: rgba(173, 214, 255, 0.15); }
+.monaco-editor .wordHighlight { background-color: rgba(87, 87, 87, 0.25); }
+.monaco-editor .wordHighlightStrong { background-color: rgba(14, 99, 156, 0.25); }
+.monaco-diff-editor .diff-review-line-number { color: #237893; }
+.monaco-diff-editor .diff-review-shadow { box-shadow: #dddddd 0 -6px 6px -6px inset; }
+.monaco-editor .line-insert, .monaco-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-diff-editor .line-insert, .monaco-diff-editor .char-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .inline-added-margin-view-zone { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .line-delete, .monaco-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor .line-delete, .monaco-diff-editor .char-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .inline-deleted-margin-view-zone { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor.side-by-side .editor.modified { box-shadow: -6px 0 5px -5px #dddddd; }
+
+.mtk1 { color: #000000; }
+.mtk2 { color: #fffffe; }
+.mtk3 { color: #808080; }
+.mtk4 { color: #ff0000; }
+.mtk5 { color: #0451a5; }
+.mtk6 { color: #0000ff; }
+.mtk7 { color: #09885a; }
+.mtk8 { color: #008000; }
+.mtk9 { color: #dd0000; }
+.mtk10 { color: #383838; }
+.mtk11 { color: #cd3131; }
+.mtk12 { color: #863b00; }
+.mtk13 { color: #af00db; }
+.mtk14 { color: #800000; }
+.mtk15 { color: #e00000; }
+.mtk16 { color: #3030c0; }
+.mtk17 { color: #666666; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #ff00ff; }
+.mtk20 { color: #608b4e; }
+.mtk21 { color: #a31515; }
+.mtk22 { color: #4f76ac; }
+.mtk23 { color: #008080; }
+.mtk24 { color: #001188; }
+.mtk25 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }</style><link rel="stylesheet" type="text/css" href="HackerRank_files/editor_gecko.css"><script type="text/javascript" src="HackerRank_files/en.js"></script><script type="text/javascript" src="HackerRank_files/styles.js"></script><script type="text/javascript" src="HackerRank_files/plugin.js"></script><style data-emotion="css"></style><link rel="stylesheet" type="text/css" href="HackerRank_files/tableselection.css"><script type="text/javascript" src="HackerRank_files/en_002.js"></script><link rel="stylesheet" type="text/css" href="HackerRank_files/copyformatting.css"><script type="text/javascript" src="HackerRank_files/highlight.js"></script><meta property="og:url" id="meta-og-url" content="https://www.hackerrank.com/test/2sedsp4no1t/questions/2telb6sjffe"><meta name="twitter:url" id="meta-twitter-url" content="https://www.hackerrank.com/test/2sedsp4no1t/questions/2telb6sjffe"><script charset="utf-8" src="HackerRank_files/87-927b31ee.js"></script><script charset="utf-8" src="HackerRank_files/130-6d44250d.js"></script><style type="text/css" media="screen"></style><script charset="utf-8" src="HackerRank_files/81-88cc7228.js"></script><script charset="utf-8" src="HackerRank_files/129-b820016a.js"></script></head>
+
+  
+
+  <body class="theme-m" data-gr-c-s-loaded="true">
+      
+
+  <!-- Just a placeholder div to start loading open sans and source code loader -->
+  <div class="font-open-sans-loader"></div>
+  <div class="font-source-code-loader"></div>
+  <!-- Just a placeholder div to start loading open sans and source code loader end -->
+
+  <div id="content" onclick="void(0);"><div class="ui-kit-root"><div class="body-wrap base-page test_view-page question_listview-page single_question_view-page" style=""><div class="root-container"><div class="prefetch-assets-wrapper"><div class="prefetch-assets-wrapper__asset--hide"><div class="ckeditor"><div id="prefech_assets_ckeditor" style=""></div></div></div></div><div class="d-flex flex-row test-container test-container--fullscreen"><div class="d-flex question-tab"><ul class="question-tab__list"><li class="d-flex flex-column align-items-center justify-content-center question-tab__timer" aria-label="15 mins 50 seconds left" data-balloon-pos="right"><button class="ui-btn ui-btn-normal ui-btn-plain question-tab__timer-toggle-btn"><div class="ui-content align-icon-right"><span class="ui-text">15m left</span></div></button></li><li><a class="d-block question-tab__list-item" title="List of Questions" href="https://www.hackerrank.com/test/2sedsp4no1t/questions">ALL</a></li><li><a class="d-block question-tab__list-item" aria-label="See instructions" href="https://www.hackerrank.com/test/2sedsp4no1t/instructions"><i class="ui-icon-info question-tab__list-item-icon"></i></a></li><li class="question-tab__separator"></li></ul><ul class="question-tab__list question-tab__list--scrollable"><li><a class="d-block question-tab__list-item question-tab__list-item--answered" aria-label="Modify submission of question 1" href="https://www.hackerrank.com/test/2sedsp4no1t/questions/3obm4pi3dm1">1</a></li><li><a class="d-block question-tab__list-item question-tab__list-item--answered" aria-label="Modify submission of question 2" href="https://www.hackerrank.com/test/2sedsp4no1t/questions/fk795qq">2</a></li><li><a class="d-block question-tab__list-item question-tab__list-item--answered" aria-label="Modify submission of question 3" href="https://www.hackerrank.com/test/2sedsp4no1t/questions/er4tst8hiqi">3</a></li><li><a class="d-block question-tab__list-item question-tab__list-item--answered" aria-label="Modify submission of question 4" href="https://www.hackerrank.com/test/2sedsp4no1t/questions/6l8269dfona">4</a></li><li><a class="d-block question-tab__list-item question-tab__list-item--active" aria-label="Solve question 5" href="https://www.hackerrank.com/test/2sedsp4no1t/questions/2telb6sjffe">5</a></li></ul></div><div class="d-flex flex-column test-container__content"><div class="question-view question-view--design"><section class="design-question"><div class="d-flex flex-row split-pane"><div class="layout-pane layout-pane--primary layout-pane--smooth"><div class="layout-pane__container"><div class="design-question__left-pane"><section><h1 class="question-view__title">5. Enhanced Flexible Grid</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="2telb6sjffe-instruction"><p>Create a<em> flexible grid</em> with <em>1</em>&nbsp;row and <em>4</em>&nbsp;columns.&nbsp;The width of each column is <em>25% </em>of
+ the window size. This percentage width must be maintained even if the 
+page is resized. Each cell of the grid can contain another <em>1x4</em> <em>flexible grid</em>. The border of the grid must be&nbsp;<em>1px black</em>.</p>
+
+<p>&nbsp;</p>
+
+<p>Perform the following operations based on the value of window size:</p>
+
+<ul>
+	<li>If the window size is less than <em>720px</em>, then the <em>1x4 flexible grid</em> becomes a&nbsp;<em>2x2</em> grid.&nbsp; That is, the <em>3<sup>rd</sup></em> and <em>4<sup>th</sup></em> columns slide down onto the <em>2<sup>nd</sup></em> row.</li>
+	<li>If the window size is less than <em>360px</em>, then the <em>1x4 flexible grid</em> becomes <em>4x1</em> grid.&nbsp; Each column slides&nbsp;under the one before it. The <em>2<sup>nd</sup></em> column slides under the <em>1<sup>st</sup></em>, the <em>3<sup>rd</sup></em>&nbsp;slides&nbsp;under the <em>2<sup>nd</sup></em>, and the&nbsp;<em>4<sup>th</sup></em> slides under the <em>3<sup>rd</sup></em>.</li>
+</ul>
+</div></div></section></div></div></div><div aria-grabbed="false" role="presentation" draggable="true" class="pane-splitter pane-splitter--horizontal"><div class="pane-splitter__drag-icon" style="top: 42px;"><svg viewBox="0 0 6 30" width="1em" height="1em" class=" ui-svg-icon" fill="currentColor"><path d="M0 0h2v2H0zm4 0h2v2H4zM0 4h2v2H0zm4 0h2v2H4zM0 8h2v2H0zm4 0h2v2H4zm-4 4h2v2H0zm4 0h2v2H4zm-4 4h2v2H0zm4 0h2v2H4zm-4 4h2v2H0zm4 0h2v2H4zm-4 4h2v2H0zm4 0h2v2H4zm-4 4h2v2H0zm4 0h2v2H4z"></path></svg></div></div><div class="layout-pane layout-pane--smooth" style="width: 75.9542%;"><div class="layout-pane__container"><div class="d-flex flex-column design-question__right-pane"><div class="d-flex design-question__editor-area"><div class="d-flex flex-column split-pane design-question__solution-split"><div class="layout-pane layout-pane--primary layout-pane--smooth layout-pane--vertical"><div class="layout-pane__container"><div class="candidate-site-editor design-question-editor  candidate-site-editor--loaded"><div class="ui-tabs-wrap design-question-editor__tabs"><div class="render-list clearfix design-question-editor__tab-list"><ul class="tab-header" role="tablist"><li id="HTML" class="tab-item" role="tab" aria-selected="false"><div class="design-question-editor__language" role="tab" tabindex="0"><span class="design-question-editor__language__item">HTML</span></div></li><li id="CSS" class="tab-item active" role="tab" aria-selected="true"><div class="design-question-editor__language" role="tab" tabindex="0"><span class="design-question-editor__language__item">CSS</span></div></li><li id="JavaScript" class="tab-item" role="tab" aria-selected="false"><div class="design-question-editor__language" role="tab" tabindex="0"><span class="design-question-editor__language__item">JavaScript</span></div></li></ul></div><div class="tab-list-content design-question-editor__tab-content" role="tabpanel"><div class="hr-monaco-editor-with-statusbar"><div class="hr-monaco-settings-editor"><button tabindex="0" class="ui-btn ui-btn-link settings-toggle " aria-haspopup="true" aria-expanded="false" aria-label="Editor Settings" title="Editor Settings"><svg viewBox="0 0 36 36" width="1em" height="1em" class=" ui-svg-icon" fill="currentColor"><path d="M18 0c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0 14c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4zm0 14c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></div><div class="hr-monaco-base-editor showUnused" style="height: 500.8px;" data-keybinding-context="1" data-mode-id="css"><div class="monaco-editor no-user-select  vs focused" style="width: 508px; height: 501px;" data-uri="file://workspace/file.css"><div data-mprt="3" class="overflow-guard" style="width: 508px; height: 501px;"><div class="margin" style="position: absolute; will-change: transform; top: 0px; height: 650px; width: 71px;" role="presentation" aria-hidden="true"><div class="glyph-margin" style="left: 0px; width: 0px; height: 650px;"></div><div class="margin-view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="margin-view-overlays focused" style="position: absolute; width: 71px; font-family: SourceCodePro, monospace; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: 0px; height: 650px;" role="presentation" aria-hidden="true"><div style="position:absolute;top:220px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">10</div></div><div style="position:absolute;top:240px;width:100%;height:20px;"><div class="cldr folding alwaysShowFoldIcons" style="left:45px;width:26px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">11</div></div><div style="position:absolute;top:260px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">12</div></div><div style="position:absolute;top:280px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">13</div></div><div style="position:absolute;top:300px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">14</div></div><div style="position:absolute;top:320px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">15</div></div><div style="position:absolute;top:340px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">16</div></div><div style="position:absolute;top:120px;width:100%;height:20px;"><div class="current-line" style="width:71px; height:20px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">5</div></div><div style="position:absolute;top:140px;width:100%;height:20px;"><div class="cldr folding alwaysShowFoldIcons" style="left:45px;width:26px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">6</div></div><div style="position:absolute;top:160px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">7</div></div><div style="position:absolute;top:180px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">8</div></div><div style="position:absolute;top:200px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">9</div></div><div style="position:absolute;top:360px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">17</div></div><div style="position:absolute;top:380px;width:100%;height:20px;"><div class="cldr folding alwaysShowFoldIcons" style="left:45px;width:26px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">18</div></div><div style="position:absolute;top:400px;width:100%;height:20px;"><div class="cldr folding alwaysShowFoldIcons" style="left:45px;width:26px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">19</div></div><div style="position:absolute;top:420px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">20</div></div><div style="position:absolute;top:440px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">21</div></div><div style="position:absolute;top:460px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">22</div></div><div style="position:absolute;top:480px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">23</div></div><div style="position:absolute;top:500px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">24</div></div><div style="position:absolute;top:0px;width:100%;height:20px;"><div class="cldr folding alwaysShowFoldIcons" style="left:45px;width:26px;"></div><div class="line-numbers lh-even" style="left:0px;width:45px;">1</div></div><div style="position:absolute;top:20px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">2</div></div><div style="position:absolute;top:40px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">3</div></div><div style="position:absolute;top:60px;width:100%;height:20px;"></div><div style="position:absolute;top:80px;width:100%;height:20px;"></div><div style="position:absolute;top:100px;width:100%;height:20px;"><div class="line-numbers lh-even" style="left:0px;width:45px;">4</div></div></div></div><div class="monaco-scrollable-element editor-scrollable vs" role="presentation" style="position: absolute; overflow: hidden; left: 71px; width: 437px; height: 501px;" data-mprt="5"><div class="lines-content monaco-editor-background" style="position: absolute; overflow: hidden; width: 1000000px; height: 1000000px; touch-action: none; will-change: transform; top: 0px; left: 0px;"><div class="view-overlays focused" style="position: absolute; height: 0px; width: 450px;" role="presentation" aria-hidden="true"><div style="position:absolute;top:220px;width:100%;height:20px;"></div><div style="position:absolute;top:240px;width:100%;height:20px;"></div><div style="position:absolute;top:260px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:280px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:300px;width:100%;height:20px;"></div><div style="position:absolute;top:320px;width:100%;height:20px;"></div><div style="position:absolute;top:340px;width:100%;height:20px;"></div><div style="position:absolute;top:120px;width:100%;height:20px;"><div class="current-line" style="width:450px; height:20px;"></div></div><div style="position:absolute;top:140px;width:100%;height:20px;"></div><div style="position:absolute;top:160px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:180px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:200px;width:100%;height:20px;"></div><div style="position:absolute;top:360px;width:100%;height:20px;"></div><div style="position:absolute;top:380px;width:100%;height:20px;"></div><div style="position:absolute;top:400px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:420px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div><div class="cigr" style="left:36px;height:20px;width:36px"></div></div><div style="position:absolute;top:440px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:460px;width:100%;height:20px;"></div><div style="position:absolute;top:480px;width:100%;height:20px;"></div><div style="position:absolute;top:500px;width:100%;height:20px;"></div><div style="position:absolute;top:0px;width:100%;height:20px;"></div><div style="position:absolute;top:20px;width:100%;height:20px;"><div class="cigr" style="left:0px;height:20px;width:36px"></div></div><div style="position:absolute;top:40px;width:100%;height:20px;"></div><div style="position:absolute;top:60px;width:100%;height:20px;"></div><div style="position:absolute;top:80px;width:100%;height:20px;"></div><div style="position:absolute;top:100px;width:100%;height:20px;"></div></div><div role="presentation" aria-hidden="true" class="view-rulers"></div><div class="view-zones" style="position: absolute;" role="presentation" aria-hidden="true"></div><div class="view-lines" style="position: absolute; font-family: SourceCodePro, monospace; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: 0px; width: 450px; height: 650px;" role="presentation" aria-hidden="true" data-mprt="7"><div style="top:220px;height:20px;" class="view-line"><span><span>&nbsp;</span></span></div><div style="top:240px;height:20px;" class="view-line"><span><span class="mtk14">.box</span><span class="mtk1">&nbsp;{</span></span></div><div style="top:260px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk4">border:</span><span class="mtk1">&nbsp;</span><span class="mtk7">1px</span><span class="mtk1">&nbsp;</span><span class="mtk5">solid</span><span class="mtk1">&nbsp;</span><span class="mtk5 ced-colorBox-680f571e-3"></span><span class="mtk5">black</span><span class="mtk1">;</span></span></div><div style="top:280px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk4">flex-grow:</span><span class="mtk1">&nbsp;</span><span class="mtk7">25%</span><span class="mtk1">;</span></span></div><div style="top:300px;height:20px;" class="view-line"><span><span class="mtk1">}</span></span></div><div style="top:320px;height:20px;" class="view-line"><span><span>&nbsp;</span></span></div><div style="top:340px;height:20px;" class="view-line"><span><span class="mtk8">/*&nbsp;flex&nbsp;box&nbsp;responsiveness&nbsp;for&nbsp;720px*/</span></span></div><div style="top:120px;height:20px;" class="view-line"><span><span>&nbsp;</span></span></div><div style="top:140px;height:20px;" class="view-line"><span><span class="mtk14">.container</span><span class="mtk1">{</span></span></div><div style="top:160px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk4">flex-wrap:</span><span class="mtk1">&nbsp;</span><span class="mtk5">wrap</span><span class="mtk1">;</span></span></div><div style="top:180px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk4">display:</span><span class="mtk1">&nbsp;</span><span class="mtk5">flex</span><span class="mtk1">;</span></span></div><div style="top:200px;height:20px;" class="view-line"><span><span class="mtk1">}</span></span></div><div style="top:360px;height:20px;" class="view-line"><span><span>&nbsp;</span></span></div><div style="top:380px;height:20px;" class="view-line"><span><span class="mtk1">@</span><span class="mtk14">media</span><span class="mtk1">&nbsp;(</span><span class="mtk14">max-width:</span><span class="mtk1">&nbsp;720</span><span class="mtk14">px</span><span class="mtk1">)&nbsp;{</span></span></div><div style="top:400px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;.box&nbsp;{</span></span></div><div style="top:420px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="mtk4">width:</span><span class="mtk1">&nbsp;</span><span class="mtk5">calc(</span><span class="mtk7">50%</span><span class="mtk1">&nbsp;-&nbsp;</span><span class="mtk7">2px</span><span class="mtk5">)</span></span></div><div style="top:440px;height:20px;" class="view-line"><span><span class="mtk1">&nbsp;&nbsp;&nbsp;&nbsp;}</span></span></div><div style="top:460px;height:20px;" class="view-line"><span><span class="mtk1">}</span></span></div><div style="top:480px;height:20px;" class="view-line"><span><span>&nbsp;</span></span></div><div style="top:500px;height:20px;" class="view-line"><span><span class="mtk8">/*&nbsp;flex&nbsp;box&nbsp;responsiveness&nbsp;for&nbsp;360px*/</span></span></div><div style="top:0px;height:20px;" class="view-line"><span><span class="mtk8">/*&nbsp;html&nbsp;{</span></span></div><div style="top:20px;height:20px;" class="view-line"><span><span class="mtk8">&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;rgb(114,9,121);</span></span></div><div style="top:40px;height:20px;" class="view-line"><span><span class="mtk8">background:&nbsp;linear-gradient(90deg,&nbsp;rgba(114,9,</span></span></div><div style="top:60px;height:20px;" class="view-line"><span><span class="mtk8">121,1)&nbsp;0%,&nbsp;rgba(158,108,209,1)&nbsp;0%,&nbsp;rgba(0,212,</span></span></div><div style="top:80px;height:20px;" class="view-line"><span><span class="mtk8">255,1)&nbsp;100%);</span></span></div><div style="top:100px;height:20px;" class="view-line"><span><span class="mtk8">}&nbsp;*/</span></span></div></div><div data-mprt="1" class="contentWidgets" style="position: absolute; top: 0px;"><div class="lightbulb-glyph" title="Show Fixes (Ctrl+.)" style="position: absolute; visibility: hidden; max-width: 598px;" widgetid="LightBulbWidget"></div></div><div role="presentation" aria-hidden="true" class="cursors-layer cursor-line-style cursor-solid"><div class="cursor " style="height: 20px; top: 120px; left: 0px; font-family: SourceCodePro, monospace; font-weight: normal; font-size: 15px; line-height: 20px; letter-spacing: 0px; display: block; visibility: hidden; width: 2px;"></div></div></div><div role="presentation" aria-hidden="true" class="visible scrollbar horizontal" style="position: absolute; width: 423px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; will-change: transform; width: 410px;"></div></div><canvas class="decorationsOverviewRuler" style="position: absolute; will-change: transform; top: 0px; right: 0px; width: 14px; height: 501px;" aria-hidden="true" width="14" height="501"></canvas><div role="presentation" aria-hidden="true" class="visible scrollbar vertical" style="position: absolute; width: 14px; height: 501px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 14px; will-change: transform; height: 386px;"></div></div></div><div role="presentation" aria-hidden="true" style="width: 508px;" class=""></div><textarea data-mprt="6" class="inputarea" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" aria-label="Editor content;Press Alt+F1 for Accessibility Options." role="textbox" aria-multiline="true" aria-haspopup="false" aria-autocomplete="both" style="font-size: 1px; line-height: 20px; top: 120px; left: 71px; width: 0px; height: 0px; font-family: SourceCodePro, monospace; font-weight: normal; letter-spacing: 0px;" wrap="off">/* html {
+    background: rgb(114,9,121);
+background: linear-gradient(90deg, rgba(114,9,121,1) 0%, rgba(158,108,209,1) 0%, rgba(0,212,255,1) 100%);
+} */
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+</textarea><div style="position: absolute; top: 0px; left: 0px; width: 0px; height: 0px;"></div><div data-mprt="4" class="overlayWidgets" style="width: 508px;"><div class="accessibilityHelpWidget" style="display: none; position: absolute;" role="dialog" aria-hidden="true" widgetid="editor.contrib.accessibilityHelpWidget"><div role="document"></div></div><div class="monaco-editor-hover hidden" aria-hidden="true" role="presentation" style="position: absolute;" widgetid="editor.contrib.modesGlyphHoverWidget"></div></div><div data-mprt="8" class="minimap slider-mouseover" style="position: absolute; left: 0px; width: 0px; height: 501px;" role="presentation" aria-hidden="true"><div class="minimap-shadow-hidden" style="height: 501px;"></div><canvas style="position: absolute; left: 0px; width: 1px; height: 501px;" width="1" height="501"></canvas><canvas style="position: absolute; left: 0px; width: 1px; height: 501px;" class="minimap-decorations-layer" width="1" height="501"></canvas><div style="position: absolute; will-change: transform; width: 0px;" class="minimap-slider"><div style="position: absolute; width: 0px; height: 0px;" class="minimap-slider-horizontal"></div></div></div></div><div data-mprt="2" class="overflowingContentWidgets"><div class="monaco-editor-hover hidden" tabindex="0" style="position: absolute; visibility: hidden; max-width: 802px; top: 232px; left: 36px;" widgetid="editor.contrib.modesContentHoverWidget"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-editor-hover-content" style="overflow: hidden; font-size: 15px; line-height: 20px; max-height: 250px; max-width: 500px;"><div class="hover-row markdown-hover"><div class="hover-contents"><div><p>Specifies the width of the content area, padding area or border area (depending on 'box-sizing') of certain boxes.</p></div></div></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 490px; height: 10px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; will-change: transform; width: 490px;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 48px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; will-change: transform; height: 48px;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div><div class="editor-widget suggest-widget" style="position: absolute; visibility: inherit; max-width: 739px; top: 300px; left: 58.1333px; line-height: 20px;" widgetid="editor.widget.suggestWidget" monaco-visible-content-widget="true"><div class="message" style="display: none; background-color: rgb(243, 243, 243); border-color: rgb(200, 200, 200);" aria-hidden="true"></div><div class="tree" style="background-color: rgb(243, 243, 243); border-color: rgb(200, 200, 200); height: 220px; display: none;" aria-hidden="true"><div class="monaco-list list_id_1 selection-none" tabindex="0" role="tree"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="monaco-list-rows" style="overflow: hidden; height: 0px; left: 0px; top: 0px;"></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute; width: 0px; height: 0px; left: 0px; bottom: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; will-change: transform; width: 0px;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute; width: 10px; height: 220px; right: 0px; top: 0px;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; will-change: transform; height: 220px;"></div></div></div><style type="text/css" media="screen">.monaco-list.list_id_1:focus .monaco-list-row.focused { background-color: #d6ebff; }
+.monaco-list.list_id_1:focus .monaco-list-row.focused:hover { background-color: #d6ebff; }
+.monaco-list.list_id_1:focus .monaco-list-row.selected { background-color: #0069d1; }
+.monaco-list.list_id_1:focus .monaco-list-row.selected:hover { background-color: #0069d1; }
+.monaco-list.list_id_1:focus .monaco-list-row.selected { color: #ffffff; }
+
+				.monaco-drag-image,
+				.monaco-list.list_id_1:focus .monaco-list-row.selected.focused { background-color: #0074e8; }
+			
+
+				.monaco-drag-image,
+				.monaco-list.list_id_1:focus .monaco-list-row.selected.focused { color: #ffffff; }
+			
+.monaco-list.list_id_1 .monaco-list-row.focused { background-color:  #d6ebff; }
+.monaco-list.list_id_1 .monaco-list-row.focused:hover { background-color:  #d6ebff; }
+.monaco-list.list_id_1 .monaco-list-row.selected { background-color:  #e4e6f1; }
+.monaco-list.list_id_1 .monaco-list-row.selected:hover { background-color:  #e4e6f1; }
+.monaco-list.list_id_1:not(.drop-target) .monaco-list-row:hover:not(.selected):not(.focused) { background-color:  #f0f0f0; }
+
+				.monaco-list.list_id_1.drop-target,
+				.monaco-list.list_id_1 .monaco-list-row.drop-target { background-color: #d6ebff !important; color: inherit !important; }
+			
+.monaco-list-type-filter { background-color: #efc1ad }
+.monaco-list-type-filter { border: 1px solid rgba(0, 0, 0, 0); }
+.monaco-list-type-filter.no-matches { border: 1px solid #be1100; }
+.monaco-list-type-filter { box-shadow: 1px 1px 1px #a8a8a8; }</style></div></div><div class="details" style="font-size: 15px; font-weight: normal; display: none; background-color: rgb(243, 243, 243); border-color: rgb(200, 200, 200);" aria-hidden="true"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="body" style="overflow: hidden;"><div class="header"><span class="close" title="Read less... (Ctrl+Space)" style="height: 20px; width: 20px;"></span><p class="type" style="font-family: SourceCodePro, monospace;"></p></div><p class="docs"></p></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; will-change: transform;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; will-change: transform;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow top-left-corner"></div></div></div></div></div><div class="context-view" style="display: none;" aria-hidden="true"></div></div></div><div class="hr-monaco-editor-statusbar"><div class="statusbar-position">Line: 5 Col: 1</div><div style="display: flex;"><div class="statusbar-message"></div></div></div></div></div></div></div><div class="d-flex design-question-footer" role="tablist"><div class="d-flex align-items-center justify-content-center design-question-footer__rendered-view active" role="tab" tabindex="0">Rendered View</div><div class="d-flex justify-content-end design-question-footer__buttons"><button class="ui-btn ui-btn-normal ui-btn-primary design-question-footer__render"><div class="ui-content align-icon-right"><span class="ui-text">Render</span></div></button><button class="ui-btn ui-btn-normal ui-btn-primary design-question-footer__submit"><div class="ui-content align-icon-right"><span class="ui-text">Submit Answer &amp; Continue</span></div></button></div></div></div></div><div aria-grabbed="false" role="presentation" draggable="true" class="pane-splitter pane-splitter--vertical"><div class="pane-splitter-button" style="left: calc(50% - 18px);"><button class="ui-btn ui-btn-normal ui-btn-secondary"><div class="ui-content align-icon-right has-icon"><span class="ui-text"></span><i class="ui-icon-chevron-left ui-btn-icon"></i></div></button></div></div><div class="layout-pane layout-pane--smooth layout-pane--vertical" style="height: 0%;"><div class="layout-pane__container"><section class="design-question-output"><div class="question-run-status question-run-status--success"><span class="design-question-output__new-window">Tip: Open to view in a new tab<a class="design-question-output__url" href="https://design-15752223-2telb6sjffe.hrcdn.net/recruit/attempts/15752223/questions/2telb6sjffe/render/292987910" target="_blank" rel="noreferrer noopener"><svg viewBox="0 0 10 10" width="1em" height="1em" class="design-question-output__new-window--icon ui-svg-icon" fill="currentColor"><g><g><path d="M8.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-6a.5.5 0 0 1 .5-.5h3a.5.5 0 0 0 0-1h-3A1.5 1.5 0 0 0 0 2.5v6A1.5 1.5 0 0 0 1.5 10h6A1.5 1.5 0 0 0 9 8.5v-3a.5.5 0 0 0-.5-.5z"></path><path d="M10 .31A.51.51 0 0 0 9.69 0a.41.41 0 0 0-.19 0h-3a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5h1.79L3.65 5.65a.48.48 0 0 0 0 .7.48.48 0 0 0 .7 0L9 1.71V3.5a.5.5 0 0 0 1 0v-3a.41.41 0 0 0 0-.19z"></path></g></g></svg></a>if you see any issues with rendering</span></div><iframe title="design question output content" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin" src="HackerRank_files/292987910.html" class="design-question-output__content"></iframe></section></div></div></div></div></div></div></div></div></section></div></div></div></div></div></div></div><!--Required to handle event bubbling of click in ios safari -->
+
+
+    
+
+      <script>
+        window.moment = {
+          tz: {},
+        };
+      </script>
+    
+
+      <script>
+    //HR namespace
+    HR = window.HR || {};
+    HR.development = false;
+    HR.assetPath = 'https://hrcdn.net/candidate-site/assets/';
+    HR.pageLoadTime = Date.now();
+    HR.production = true;
+    HR.devServer = false;
+    HR.isPrivateNode = false;
+    HR.isIsomorphic = true;
+    HR.loadedWithOldCss = true;
+    HR.pusher = {"key":"a280047e3b323ccb1b65","cluster":"mt1"};
+  </script>
+
+  <!-- Vendor scripts -->
+  
+    <script src="HackerRank_files/hackerrank_r_vendor-73c2c7725e.js"></script>
+  
+
+  
+  <script src="HackerRank_files/runtime-c52b4f85.js"></script>
+  <script src="HackerRank_files/hackerrank_r_client-93efbf52.js"></script>
+
+  
+
+<script src="HackerRank_files/bundle.js" crossorigin="anonymous"></script><script type="text/javascript" id="">/*
+ JavaScript Cookie v2.1.3
+ https://github.com/js-cookie/js-cookie
+
+ Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ Released under the MIT license
+*/
+(function(l){var g=!1;if(!g){var e=window.Cookies,a=window.Cookies=l();a.noConflict=function(){window.Cookies=e;return a}}})(function(){function l(){for(var e=0,a={};e<arguments.length;e++){var b=arguments[e],c;for(c in b)a[c]=b[c]}return a}function g(e){function a(b,c,d){if("undefined"!==typeof document){if(1<arguments.length){d=l({path:"/"},a.defaults,d);if("number"===typeof d.expires){var h=new Date;h.setMilliseconds(h.getMilliseconds()+864E5*d.expires);d.expires=h}try{var k=JSON.stringify(c);
+/^[\{\[]/.test(k)&&(c=k)}catch(p){}c=e.write?e.write(c,b):encodeURIComponent(String(c)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent);b=encodeURIComponent(String(b));b=b.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent);b=b.replace(/[\(\)]/g,escape);return document.cookie=[b,"\x3d",c,d.expires?"; expires\x3d"+d.expires.toUTCString():"",d.path?"; path\x3d"+d.path:"",d.domain?"; domain\x3d"+d.domain:"",d.secure?"; secure":""].join("")}b||(k={});h=document.cookie?
+document.cookie.split("; "):[];for(var g=/(%[0-9A-Z]{2})+/g,n=0;n<h.length;n++){var q=h[n].split("\x3d"),f=q.slice(1).join("\x3d");'"'===f.charAt(0)&&(f=f.slice(1,-1));try{var m=q[0].replace(g,decodeURIComponent);f=e.read?e.read(f,m):e(f,m)||f.replace(g,decodeURIComponent);if(this.json)try{f=JSON.parse(f)}catch(p){}if(b===m){k=f;break}b||(k[m]=f)}catch(p){}}return k}}a.set=a;a.get=function(b){return a.call(a,b)};a.getJSON=function(){return a.apply({json:!0},[].slice.call(arguments))};a.defaults={};
+a.remove=function(b,c){a(b,"",l(c,{expires:-1}))};a.withConverter=g;return a}return g(function(){})});</script><script type="text/javascript" id="">(function(h){function l(){for(var c={},e=0;e<arguments.length;e++){var a=arguments[e],g;for(g in a)a.hasOwnProperty(g)&&(c[g]=a[g])}return c}function m(a){var e=[],c=function(a,b){b="function"===typeof b?b():b;b=null===b?"":void 0===b?"":b;e[e.length]=encodeURIComponent(a)+"\x3d"+encodeURIComponent(b)},g=function(a,b){var f;if(a)if(Array.isArray(b)){var d=0;for(f=b.length;d<f;d++)g(a+"["+("object"===typeof b[d]&&b[d]?d:"")+"]",b[d])}else if("[object Object]"===String(b))for(d in b)g(a+"["+d+"]",b[d]);
+else c(a,b);else if(Array.isArray(b))for(d=0,f=b.length;d<f;d++)c(b[d].name,b[d].value);else for(d in b)g(d,b[d]);return e};return g("",a).join("\x26")}function n(c,e,h){var g=a.session_id?a.session_id:a.session_cookie_key?k.get(a.session_cookie_key):void 0;h=l({session_id:g,company_id:"",attempt_id:a.attempt_id,test_id:a.test_id,candidate_site:"new"},h);c={product:a.product,event_name:c,event_value:e,params:h};var f;e={session_landing_url:k.get("session_landing_url"),session_referrer:k.get("session_referrer"),
+session_referring_domain:k.get("session_referring_domain")};try{if(f=k.get("session_utm_params"))f=JSON.parse(f),e.session_utm_source=f.s,e.session_utm_medium=f.m,e.session_utm_campaign=f.c}catch(b){}f=e;e=a.use_cookie?{uid:k.get(a.uid_cookie_key),uid_token:k.get(a.uid_token_cookie_key)}:{uid:a.uid,uid_token:a.uid_token};f=l(c,f,e);c=new XMLHttpRequest;c.withCredentials=!1;c.open("POST",p);c.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset\x3dUTF-8");c.send(m(f))}var k=
+h.Cookies,a={product:"candidate_site",use_cookie:!0,uid_cookie_key:"hackerrank_mixpanel_token",session_cookie_key:"session_id",uid_token_cookie_key:"metrics_user_identifier"},p=h.HR&&h.HR.development?"/metrics":"https:\/\/metrics.hackerrank.com\/metrics",q={getConfig:function(){return a},updateConfig:function(c){"object"===typeof c&&(a=l(a,c))},track:n};h.hrMetrics=q})(window);</script><script type="text/javascript" id="">function debounce(b,f,c){var a;return function(){var d=this,e=arguments,g=function(){a=null;c||b.apply(d,e)},h=c&&!a;clearTimeout(a);a=setTimeout(g,f);h&&b.apply(d,e)}}(function(){document.addEventListener("click",debounce(google_tag_manager["GTM-NLXX3SZ"].macro(12),500,!0),!0);document.addEventListener("mouseenter",debounce(google_tag_manager["GTM-NLXX3SZ"].macro(21),1E3),!0);window.jsTrackGoogleAnalytics&&"function"!==typeof window.jsTrackGoogleAnalytics||(window.jsTrackGoogleAnalytics=google_tag_manager["GTM-NLXX3SZ"].macro(24))})();</script><script type="text/javascript" id="">Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector);"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(d,f){if(null==d)throw new TypeError("Cannot convert undefined or null to object");for(var e=Object(d),b=1;b<arguments.length;b++){var a=arguments[b];if(null!=a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&(e[c]=a[c])}return e},writable:!0,configurable:!0});</script><div class="offline-ui offline-ui-up"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry"></a></div><div class="cke_screen_reader_only cke_copyformatting_notification"><div aria-live="polite"></div></div><div><div class="hr-toaster hr-toaster-topCenter" style="top: 76px; right: 50vw; bottom: auto;"><span></span></div></div><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true" style="visibility: visible;">flex-grow</div><div class="monaco-status" role="status" aria-atomic="true"></div></div></body></html>

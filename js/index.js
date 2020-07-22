@@ -44,6 +44,10 @@ var submission = function() {
       output.style.background ="aqua"
       output.style.background ="pink"
       output.innerHTML = "Hey! " + name + " you were born on a " + daysOfTheWeek[results] + " <br> and your Akan name is " + femaleNames[results];
+     }
+     else {
+        alert("Please Fill out all fields : )");
+        return false;
   }
   
   };

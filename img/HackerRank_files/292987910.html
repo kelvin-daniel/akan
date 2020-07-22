@@ -1,0 +1,53 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">
+ html {
+    background: rgb(114,9,121);
+background: linear-gradient(90deg, rgba(114,9,121,1) 0%, rgba(158,108,209,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.box {
+    border: 1px solid black;
+    flex-grow: 25%;
+}
+
+/* flex box responsiveness for 720px*/
+
+@media (max-width: 720px) {
+    .box {
+        width: calc(50% - 2px)
+    }
+}
+
+/* flex box responsiveness for 360px*/
+
+@media (max-width: 360px) {
+    .box {
+        width: calc(100% - 2px)
+    }
+}
+</style>
+ 
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+ <script type="text/javascript">
+ // Add your javascript here
+ </script>
+</body></html>
