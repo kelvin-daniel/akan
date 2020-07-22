@@ -8,6 +8,15 @@ This is an application built to generate akan names which originated in Ghana an
 
 ## Features
 akan name generator
+day of birth generator
+
+## Setup
+
+    Clone this repository to a location in your file system. git clone https://github.com/kelvin-daniel/akan.git
+
+    Open terminal command line then navigate to the root folder of the application. cd akan
+
+    Open index.html using your preferred browser, and have fun. Don't forget to share with your friends and family!
 
 ## Link to the published site
 Checkout the live site here.
